@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeNotes | Learn Programming</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>&lt;/&gt;</span> CodeNotes
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button id="themeBtn">🌙</button>
+                <button class="menu-btn" id="menuBtn">☰</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO CODENOTES</p>
+
+            <h1>
+                Learn Programming.
+                <span>Build Your Future.</span>
+            </h1>
+
+            <p class="hero-text">
+                Simple programming notes and resources designed
+                for students, beginners and anyone who wants to
+                learn coding.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#topics" class="btn primary-btn">
+                    Explore Notes
+                </a>
+
+                <a href="#quiz" class="btn secondary-btn">
+                    Take Quiz
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-code">
+
+            <div class="code-window">
+
+                <div class="window-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <pre>
+<span class="purple">def</span> <span class="blue">learn</span>():
+    knowledge = <span class="green">"Programming"</span>
+    practice = <span class="orange">True</span>
+
+    <span class="purple">if</span> practice:
+        <span class="blue">print</span>(
+            <span class="green">"Keep Coding!"</span>
+        )
+                </pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TOPICS ================= -->
+
+    <section class="section" id="topics">
+
+        <div class="section-title">
+
+            <p>LEARN & EXPLORE</p>
+
+            <h2>Programming Topics</h2>
+
+            <span>
+                Choose a topic and start learning.
+            </span>
+
+        </div>
+
+
+        <div class="topic-grid">
+
+            <div class="topic-card">
+                <div class="topic-icon">🐍</div>
+                <h3>Python</h3>
+                <p>
+                    Learn Python fundamentals, variables,
+                    functions, loops and more.
+                </p>
+                <button class="learn-btn"
+                    onclick="showTopic('Python')">
+                    View Notes →
+                </button>
+            </div>
+
+
+            <div class="topic-card">
+                <div class="topic-icon">💻</div>
+                <h3>C Programming</h3>
+                <p>
+                    Understand C programming basics,
+                    functions, arrays and pointers.
+                </p>
+                <button class="learn-btn"
+                    onclick="showTopic('C Programming')">
+                    View Notes →
+                </button>
+            </div>
+
+
+            <div class="topic-card">
+                <div class="topic-icon">☕</div>
+                <h3>Java</h3>
+                <p>
+                    Learn object-oriented programming,
+                    classes, objects and inheritance.
+                </p>
+                <button class="learn-btn"
+                    onclick="showTopic('Java')">
+                    View Notes →
+                </button>
+            </div>
+
+
+            <div class="topic-card">
+                <div class="topic-icon">🌐</div>
+                <h3>HTML & CSS</h3>
+                <p>
+                    Create beautiful websites using
+                    HTML and CSS.
+                </p>
+                <button class="learn-btn"
+                    onclick="showTopic('HTML & CSS')">
+                    View Notes →
+                </button>
+            </div>
+
+
+            <div class="topic-card">
+                <div class="topic-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>
+                    Add interaction and dynamic features
+                    to your websites.
+                </p>
+                <button class="learn-btn"
+                    onclick="showTopic('JavaScript')">
+                    View Notes →
+                </button>
+            </div>
+
+
+            <div class="topic-card">
+                <div class="topic-icon">🗄️</div>
+                <h3>SQL</h3>
+                <p>
+                    Learn databases, queries, tables,
+                    joins and SQL commands.
+                </p>
+                <button class="learn-btn"
+                    onclick="showTopic('SQL')">
+                    View Notes →
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="section features-section" id="features">
+
+        <div class="section-title">
+
+            <p>WHY CODENOTES?</p>
+
+            <h2>Everything You Need to Learn</h2>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature">
+                <div>📖</div>
+                <h3>Easy Notes</h3>
+                <p>
+                    Simple explanations that are easy
+                    to understand and revise.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <div>🔍</div>
+                <h3>Quick Search</h3>
+                <p>
+                    Find the programming topic you
+                    need quickly.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <div>📱</div>
+                <h3>Responsive</h3>
+                <p>
+                    Learn comfortably on mobile,
+                    tablet or desktop.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <div>🧠</div>
+                <h3>Practice</h3>
+                <p>
+                    Test your knowledge with
+                    interactive questions.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUIZ ================= -->
+
+    <section class="section quiz-section" id="quiz">
+
+        <div class="section-title">
+
+            <p>TEST YOUR KNOWLEDGE</p>
+
+            <h2>Quick Programming Quiz</h2>
+
+        </div>
+
+
+        <div class="quiz-box">
+
+            <h3>
+                Which language is mainly used
+                to structure web pages?
+            </h3>
+
+
+            <div class="answers">
+
+                <button onclick="checkAnswer(this, false)">
+                    Python
+                </button>
+
+                <button onclick="checkAnswer(this, true)">
+                    HTML
+                </button>
+
+                <button onclick="checkAnswer(this, false)">
+                    SQL
+                </button>
+
+                <button onclick="checkAnswer(this, false)">
+                    C
+                </button>
+
+            </div>
+
+
+            <p id="quizResult"></p>
+
+            <button class="reset-btn"
+                    onclick="resetQuiz()">
+                Try Again
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="section faq-section">
+
+        <div class="section-title">
+
+            <p>QUESTIONS?</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+
+        <div class="faq-container">
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    What is CodeNotes?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        CodeNotes is a learning website that
+                        provides simple programming notes
+                        for students and beginners.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    Is CodeNotes beginner friendly?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. The content is designed to
+                        explain programming concepts in
+                        a simple way.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    Can I use it on my phone?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. The website is fully responsive
+                        and works on mobile, tablet and desktop.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    Is it useful for exam preparation?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. You can organize important
+                        programming concepts into quick
+                        revision notes.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section about-section" id="about">
+
+        <div class="about-content">
+
+            <div class="about-icon">
+                &lt;/&gt;
+            </div>
+
+            <div>
+
+                <p class="small-title">ABOUT THE PROJECT</p>
+
+                <h2>Learn. Practice. Build.</h2>
+
+                <p>
+                    CodeNotes is a student-focused programming
+                    learning platform created to make coding
+                    concepts easier to understand.
+                </p>
+
+                <p>
+                    This project demonstrates responsive web
+                    design, HTML, CSS and JavaScript interaction.
+                </p>
+
+                <strong>
+                    Created by Madhava Priya V L
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact-section" id="contact">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>Contact Us</h2>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit" class="btn primary-btn">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            &lt;/&gt; CodeNotes
+        </div>
+
+        <p>
+            Learn • Practice • Build
+        </p>
+
+        <p>
+            © 2026 CodeNotes. Created by Madhava Priya V L.
+        </p>
+
+    </footer>
+
+
+    <!-- Topic Popup -->
+
+    <div class="modal" id="topicModal">
+
+        <div class="modal-content">
+
+            <button class="close-btn"
+                    onclick="closeModal()">
+                ×
+            </button>
+
+            <h2 id="modalTitle"></h2>
+
+            <p>
+                Notes for this topic will be available
+                here. You can add your own study materials,
+                examples and programs later.
+            </p>
+
+            <button class="btn primary-btn"
+                    onclick="closeModal()">
+                Got it
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+          </html>
