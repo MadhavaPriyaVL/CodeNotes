@@ -21,12 +21,18 @@ CodeNotes is a responsive programming learning website designed for students and
 
 📂 Project Structure
 
-CodeNotes/
+CodeNotes
+
 │
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 └── README.md
+
 
 🚀 How to Run the Project
 
